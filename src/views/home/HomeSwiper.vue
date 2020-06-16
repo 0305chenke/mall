@@ -29,4 +29,10 @@ export default {
 </script>
 
 <style>
+  
+  .lbImg {
+     height: 100%;
+     width: 100%;
+  }
+
 </style>

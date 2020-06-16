@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tab-bar>
+    <tab-bar class="tabBar">
       <tab-bar-item path="/home">
         <img slot="item-icon" src="./assets/img/tabbar/home.svg" alt="">
         <img slot="item-icon-active" src="./assets/img/tabbar/home_active.svg" alt="">
@@ -27,8 +27,8 @@
 </template>
 
 <script>
-  import TabBar from './components/tabbar/TabBar'
-  import TabBarItem from './components/tabbar/TabBarItem'
+  import TabBar from './components/common/tabbar/TabBar'
+  import TabBarItem from './components/common/tabbar/TabBarItem'
 export default {
   name: 'App',
   components: {
@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style>
-
+  .tabBar {
+    z-index: 22;
+  }
 
 </style>
